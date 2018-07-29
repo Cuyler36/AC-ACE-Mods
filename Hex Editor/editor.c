@@ -53,7 +53,7 @@ gfxbuff_ptr = 0x8148fde0
 
 // Patch stuff
 OverwriteAddr = 0x80486f30; // lis r3, 0x8130 // aQMgr_actor_move_main => addi r27, r1, 8
-JumpOp = 0x4BB7B3BD; // bl 0x80002000
+JumpOp = 0x4BB7B3C5; // bl 0x80002000
 
 STORAGE_ADDRESS = 0x80001FE0
 CURRENT_POINTER = STORAGE_ADDRESS + 4
@@ -103,7 +103,7 @@ struct gfxinfo {
 };
 
 struct hexEditor {
-    u32 selectedIndex;
+    s32 selectedIndex;
     u32 currentRAMPointer;
     char printString[5];
     char addressString[5];
