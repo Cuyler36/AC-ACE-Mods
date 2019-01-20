@@ -3,7 +3,7 @@
 OUTPUT_FORMAT("elf32-powerpc")
 OUTPUT_ARCH(powerpc:common)
 
-ENTRY(init)
+ENTRY(editor_main)
 SECTIONS {
 	. = 0x80002084;
 	gfxprint_init = 0x8005b7e4;

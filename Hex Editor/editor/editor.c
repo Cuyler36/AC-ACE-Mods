@@ -192,7 +192,7 @@ void checkDPad() {
 	}
 }
 
-void init() {
+void editor_main() {
 	checkZTrigger(); // check for a Z button press to toggle if the editor is enabled
 	if (editor->enabled != 0) {
 		checkTriggerButtons();
